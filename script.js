@@ -7,15 +7,14 @@ function selectChar() {
   //Character type prompt, at least 1 char type must be selected:
   //lowercase, uppercase, numeric, or special characters
   passwordCharacters = String(window.prompt("What type of characters would you like in your password?\nSelect from: Uppercase, lowercase, numeric, or special characters"));
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  var lowercase = alphabet.split(''); //lowercase alphabet array
+  var uppercase = alphabet.toUpperCase().split(''); //uppercase alphabet array
+  var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //numeric array
+  var list = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+  var specialCharacters = list.split(''); //special character array
+
 }
-
-//Password character type
-//var charType = window.prompt();
-
-//var lowercase = ["abcdefghijklmnopqrstuvwxyz"];
-//var uppercase = lowercase.toUpperCase();
-//var numeric = Number[0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-//var specialCharacters = String[" !#$%&'()*+,-./:;<=>?@[]^_`{|}~" + '"' + "\\"];
 
 function selectLength() {
   //Password length prompt, between 8-128 characters
