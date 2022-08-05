@@ -7,7 +7,7 @@ function selectChar() {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
   var lowercase = alphabet.split(''); //lowercase alphabet array
   var uppercase = alphabet.toUpperCase().split(''); //uppercase alphabet array
-  var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //numeric array
+  var numeric = [0,1,2,3,4,5,6,7,8,9]; //numeric array
   var list = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
   var specialCharacters = list.split(''); //special character array
   
@@ -45,7 +45,6 @@ function selectChar() {
   } else {
     console.log("Answer is no");
   }
-    console.log(finalCharacterArray.length);
     
   //   if (passwordCharacters === "Uppercase" || passwordCharacters === "lowercase" || passwordCharacters === "numeric") {
   //   window.alert("Your password will contain " + passwordCharacters + " characters.");
@@ -71,11 +70,10 @@ function selectLength() {
 function generatePassword() {
   var randomArray = [];
   for (i = 0; i < passwordLength; i++) {
-    randomArray[i] = Math.floor(Math.random()*finalCharacterArray);
+    randomArray[i] = finalCharacterArray[Math.floor(Math.random()*finalCharacterArray.length)];
   }
-  console.log(passwordLength);
-  console.log(randomArray);
-  return randomArray;
+  var randomArrayString = randomArray.join('');
+  return randomArrayString;
 }
 
 // Write password to the #password input
