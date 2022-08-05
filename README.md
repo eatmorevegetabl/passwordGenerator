@@ -8,4 +8,8 @@ It can generate passwords using alphanumeric characters as well as special chara
 To use the password generator, simply click on the button that says "Generate Password" and select the criteria when prompted.
 
 ## Visuals
+<img class="screenshot" src="./Screen Shot 2022-08-04 at 11.22.26 PM.png">
 
+## Link
+Link to the completed webpage:
+https://eatmorevegetabl.github.io/passwordGenerator/
